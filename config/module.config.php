@@ -1,5 +1,6 @@
 <?php
 
 return array(
-    'ugh_administration' => array()
+    'ugh_administration' => array(
+    )
 );
