@@ -13,7 +13,7 @@ class DashboardControllerTest extends PHPUnit_Framework_TestCase
     public function testGetDashboard()
     {
         $eventManager = new EventManager();
-        $eventManager->attach(DashboardEvent::DASHBOARD_RENDER_EVENT, function(DashboardEvent $event) {
+        $eventManager->attach(DashboardEvent::DASHBOARD_RENDER_EVENT, function (DashboardEvent $event) {
             $viewModel = $event->getDashboardViewModel();
             $viewModel->setVariable('foo', 'bar');
         });
